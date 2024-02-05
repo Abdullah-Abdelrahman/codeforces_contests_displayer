@@ -1,0 +1,90 @@
+﻿
+
+@model List<Contest>
+
+<!--<button id="closeButton">Press</button>-->
+
+<script>
+
+
+	function closeall() {
+		document.getElementById('con3').style.display = 'none';
+		document.getElementById('con4').style.display = 'none';
+		document.getElementById('con2').style.display = 'none';
+		document.getElementById('con1').style.display = 'none';
+	}
+	document.getElementById('nav-div3').addEventListener('click', function () {
+	    
+		closeall();
+		document.getElementById('con3').style.display = 'grid';
+	
+	});
+
+	document.getElementById('nav-div4').addEventListener('click', function () {
+		closeall();
+		document.getElementById('con4').style.display = 'grid';
+
+
+	});
+
+	document.getElementById('nav-div1').addEventListener('click', function () {
+
+		closeall();
+		document.getElementById('con1').style.display = 'grid';
+
+	});
+
+	document.getElementById('nav-div2').addEventListener('click', function () {
+		closeall();
+		document.getElementById('con2').style.display = 'grid';
+
+
+	});
+	
+</script>
+@{
+
+
+
+
+	List<Contest> div3 = Model.FindAll(x => x.name.Contains("Div. 3")).OrderBy(x=>x.id).ToList();
+
+	List<Contest> div4 = Model.FindAll(x => x.name.Contains("Div. 4")).OrderBy(x => x.id).ToList();
+	
+
+	List<Contest> div2 = Model.FindAll(x => x.name.Contains("Div. 2")).OrderBy(x => x.id).ToList();
+
+	List<Contest> div1 = Model.FindAll(x => x.name.Contains("Div. 1")).OrderBy(x => x.id).ToList();
+
+
+	<div style="display:grid;grid-template-columns:auto auto auto; row-gap:2rem ;width:contain;" class="container" id="con3">
+
+			<partial name="_contests" model="@div3"/>	
+				
+	</div>
+
+
+
+
+	<div style="display:grid;grid-template-columns:auto auto auto; row-gap:2rem ;width:contain ;" class="container" id="con4">
+
+			<partial name="_contests" model="@div4" />
+	</div>
+
+
+
+	<div style="display:grid;grid-template-columns:auto auto auto; row-gap:2rem ;width:contain ;" class="container" id="con1">
+
+			<partial name="_contests" model="@div1" />
+
+	</div>
+
+
+
+
+	<div style="display:grid;grid-template-columns:auto auto auto; row-gap:2rem ; width:contain ;" class="container" id="con2">
+
+			<partial name="_contests" model="@div2" />
+	</div>
+}
+

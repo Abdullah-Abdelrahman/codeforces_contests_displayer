@@ -1,0 +1,41 @@
+﻿
+@model List<Contest>
+
+@{
+
+
+	@foreach (var con in Model)
+	{
+
+		<div class="card text-center" style="width: 25rem;">
+			<div class="card-body">
+				<h5 class="card-title">@con.name</h5>
+				<p class="card-text"></p>
+				<a href="https://codeforces.com/contest/\@con.id" class="btn btn-primary">Go to Contest</a>
+			</div>
+
+			<div style="display:flex;flex-basis:auto;justify-content:center">
+
+				@foreach (var sub in (List<SubmissionResult>)ViewBag.submissions)
+				{
+
+
+					if (sub.contestId == con.id)
+					{
+
+
+						if (sub.verdict == "OK")
+						{
+							<span style="height: 25px;width: 25px;background-color: lightgreen;border-radius: 50%;display: inline-block;">@sub.problem.index</span>
+
+						}
+					}
+				}
+
+			</div>
+
+
+
+		</div>
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "i0/CTF7wCDuh4Sgev2He4hXyIjseDpqgMJZ6kBlEIZn43wLq8seNDJRQqmGbglMNmTDITW4XHA6DaArB0Vqsew==",
+  "success": true,
+  "projectFilePath": "E:\\All_of_my_projrcts\\CodeChampion\\CodeChampions\\CodeChampions\\CodeChampions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tcnob\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
+    "C:\\Users\\tcnob\\.nuget\\packages\\anglesharp.css\\0.16.1\\anglesharp.css.0.16.1.nupkg.sha512",
+    "C:\\Users\\tcnob\\.nuget\\packages\\htmlsanitizer\\6.0.453\\htmlsanitizer.6.0.453.nupkg.sha512",
+    "C:\\Users\\tcnob\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\tcnob\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\tcnob\\.nuget\\packages\\prettify\\3.3.4.2013\\prettify.3.3.4.2013.nupkg.sha512",
+    "C:\\Users\\tcnob\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\tcnob\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
